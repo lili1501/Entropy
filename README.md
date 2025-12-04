@@ -1,3 +1,4 @@
+```
 ENTROPY/
 │
 ├── main.py              # Main game logic + play() function
@@ -5,7 +6,7 @@ ENTROPY/
 ├── calc_entropy.py.     # keeps all entropy, MI calculation function
 ├── valid_words.txt      # Dictionary of 5-letter English words (~14.8k words)
 └──README.md             # Documentation file (this file)
-
+```
 
 Overview
 

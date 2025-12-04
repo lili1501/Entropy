@@ -53,18 +53,18 @@ def main():
             # Update candidate list
             possible_words = filter_words(possible_words, guess, fb)
 
-            # Entropy calculation
-            H = compute_entropy(possible_words)
-            print(f"Remaining words: {len(possible_words)}")
-            print_entropy_details(len(possible_words), H)
-            print(f"Current Entropy: {H:.4f} bits")
-
             # User guessed correctly
             if guess == secret:
                 print("\nHurray! You solved it!")
                 print(f"The secret word was: {secret.upper()}")
                 print(f"You solved it in {guess_count} guesses!")
                 break  # End current game session
+
+            # Entropy calculation
+            H = compute_entropy(possible_words)
+            print(f"Remaining words: {len(possible_words)}")
+            print_entropy_details(len(possible_words), H)
+            print(f"Current Entropy: {H:.4f} bits")
 
             '''if only 1 word remains, let the user first try to guess it 
             and then offer a hint if they want it'''
@@ -121,7 +121,7 @@ def main():
 
             if len(possible_words) > 1:
                 bg, mi = best_guess(possible_words)
-                print(f"Suggested next guess: {bg} (Mutual Information: {mi:.4f})")
+                print(f"Suggested next guess: {bg}\n(Mutual Information: {mi:.4f})")
 
         again = input("\nDo you want to guess another word? (yes/no): ").strip().lower()
         if again not in ["yes", "y"]:

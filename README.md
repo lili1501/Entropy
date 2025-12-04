@@ -23,7 +23,7 @@ Tracks the reduction of uncertainty across rounds
 
 This satisfies:
 
-✔ Part 1: Interactive game + entropy calculations
+✔ Part 1: Interactive game + entropy calculations \
 ✔ Part 2: Strategy based on entropy and mutual information
 
 🎮 Game Description (Part 1)

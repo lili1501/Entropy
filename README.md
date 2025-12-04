@@ -51,8 +51,8 @@ Where N = number of possible words remaining.
 
 This tells the player how uncertain the game still is after each guess.
 
-Example Output
-Enter 5-letter guess: meows
+Example Output\
+Enter 5-letter guess: meows\
 🟨 M ⬛ E 🟨 O ⬛ W ⬛ S
 
 Remaining words: 215

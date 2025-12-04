@@ -35,8 +35,8 @@ After each guess, the game shows:
 
 color feedback:
 
-🟩 green = correct letter, correct position
-🟨 yellow = correct letter, wrong position
+🟩 green = correct letter, correct position\
+🟨 yellow = correct letter, wrong position\
 ⬛ black/grey = letter not in the word
 
 The number of remaining valid candidate words
@@ -92,11 +92,14 @@ When the game narrows to exactly one candidate word:
 Hint 1 → Jumbled letter set
 
 Example:
+```
 Possible letters: m, y, k, i, c
+```
 
 Hint 2 — Masked word pattern
+```
 m_c_y
-
+```
 After 2 failed attempts post-hints:
 You've used both hints and made 2 incorrect attempts.
 Do you want to reveal the secret word? (yes/no):

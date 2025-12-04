@@ -29,6 +29,7 @@ def info_gain(guess, candidates):
     current_entropy = math.log2(total)
     return current_entropy - expected_entropy
 
+# It helps user find the best guess word from the possible words list based on maximum information gain
 def best_guess(candidates):
     best_word = None
     best_mi = -1
@@ -41,6 +42,7 @@ def best_guess(candidates):
 
     return best_word, best_mi
 
+# Print entropy calculation details to the user after each guess
 def print_entropy_details(n, H):
     print("\nEntropy Calculation:")
     print(f"  H = log2(N)")

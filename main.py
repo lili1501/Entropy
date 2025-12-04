@@ -1,9 +1,24 @@
 
+"""
+WORDLE WITH ENTROPY
+Author: Shesadree Priyadarshani
+Date: 12/03/2025
+
+This script implements:
+1. Wordle-style guessing game
+2. Entropy calculation after every guess
+3. Mutual-information strategy to suggest the best next guess
+4. Two-tier hint system when only one possible word remains
+5. Replay functionality for multiple game sessions
+
+"""
+
+
 import random
 from functions import *
 from calc_entropy import *
 
-def play():
+def main():
 
     # If the user wants to play multiple games (replay functionality)
     while True:   
@@ -89,10 +104,9 @@ def play():
                 failed_attempts_after_hints += 1
 
                 if failed_attempts_after_hints >= 2:
-                    reveal = input(
-                        "\nYou've used both hints and made 2 incorrect attempts.\n"
-                        "Do you want to reveal the secret word? (yes/no): "
-                    ).strip().lower()
+                    reveal = input("\nYou've used both hints and made 2 incorrect attempts.\n"
+                                   "Do you want to reveal the secret word? (yes/no): "
+                                   ).strip().lower()
 
                     if reveal in ["yes", "y"]:
                         print("\n🔍 The secret word is:", final_word.upper())
@@ -107,7 +121,7 @@ def play():
 
             if len(possible_words) > 1:
                 bg, mi = best_guess(possible_words)
-                print(f"Suggested next guess: {bg}  (MI: {mi:.4f})")
+                print(f"Suggested next guess: {bg} (Mutual Information: {mi:.4f})")
 
         again = input("\nDo you want to guess another word? (yes/no): ").strip().lower()
         if again not in ["yes", "y"]:
@@ -115,4 +129,4 @@ def play():
             break   
 
 if __name__ == "__main__":
-    play()
+    main()

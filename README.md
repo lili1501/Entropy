@@ -3,6 +3,13 @@ Demonstration Video: https://www.canva.com/design/DAG6mK_FrNc/tNqih2Dv0rDnHtwFUH
 
 Conceptual Video: https://www.canva.com/design/DAG6m1wI2P0/ACVKgstyPBbjr2bSw0LxfA/watch?utm_content=DAG6m1wI2P0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd0150aa122
 ```
+Alternative if the above link doesn't work
+
+```
+Demonstration Video: https://drive.google.com/file/d/14UgWQCDM7qR7xoGjAD--ClD6DuV28URH/view?usp=sharing
+
+Conceptual Video: https://drive.google.com/file/d/1MvBCL-cYDA-jr1AhpaPbzS5RhSWGFCF_/view?usp=sharing
+```
 
 
 

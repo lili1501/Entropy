@@ -1,4 +1,12 @@
 ```
+Demonstration Video: https://www.canva.com/design/DAG6mK_FrNc/tNqih2Dv0rDnHtwFUHoWmg/watch?utm_content=DAG6mK_FrNc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4c141ac036
+
+Conceptual Video: https://www.canva.com/design/DAG6m1wI2P0/ACVKgstyPBbjr2bSw0LxfA/watch?utm_content=DAG6m1wI2P0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd0150aa122
+```
+
+
+
+```
 ENTROPY/
 │
 ├── main.py              # Main game logic + play() function

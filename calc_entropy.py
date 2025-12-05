@@ -2,6 +2,30 @@
 import math
 from functions import *
 
+'''
+   The entropy formula is:
+
+   H(X) = - Σ p(x_i) * log₂(p(x_i))
+   
+   However, in the Wordle solver all remaining words are assumed
+   to be equally likely. This means each word has:
+
+    p(x_i) = 1 / N
+
+    where N is the number of remaining words.
+
+    Plugging uniform probabilities into the formula:
+
+    H = - Σ (1/N) * log₂(1/N)
+      = - (1/N) * N * log₂(1/N)
+      = log₂(N)
+
+    Therefore, when all outcomes have equal probability,
+    entropy simplifies exactly to:
+
+    H = log₂(N)
+'''
+
 def compute_entropy(words):
     n = len(words)
     if n == 0:
@@ -28,6 +52,7 @@ def info_gain(guess, candidates):
 
     current_entropy = math.log2(total)
     return current_entropy - expected_entropy
+
 
 # It helps user find the best guess word from the possible words list based on maximum information gain
 def best_guess(candidates):

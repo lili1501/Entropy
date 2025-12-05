@@ -1,6 +1,6 @@
 
 """
-WORDLE WITH ENTROPY
+WORDLE - GUESS THE WORD GAME
 Author: Shesadree Priyadarshani
 Date: 12/03/2025
 
